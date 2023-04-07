@@ -1,0 +1,112 @@
+* {
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+
+  background-color: #f3f3f3;
+}
+/*
+  Header
+*/
+header {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+
+  color: #000;
+  width: 100%;
+  min-height: 80vh;
+  
+  background: linear-gradient(30deg, rgb(245, 217, 39), rgb(245, 197, 39));
+}
+header h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 800;
+}
+header p {
+  text-align: center;
+  margin-top: 20px;
+  max-width: 500px;
+  font-weight: 600;
+}
+/*
+  Main
+*/
+main {
+  padding: 10px;
+  width: 100%;
+  max-width: 1000px;
+}
+/*
+  Poll buttons
+*/
+.poll {
+  margin-top: 40px;
+}
+.poll h2 {
+  margin-bottom: 40px;
+}
+.poll .options {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.poll .options div {
+  width: 100%;
+}
+.poll .options button {
+  transition: 250ms;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  font-weight: 600;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  border: 0px;
+  padding: 8px;
+  margin-left: 0px;
+}
+/*
+  Not clicked
+*/
+.notclicked {
+  background-color: rgb(245, 197, 39);
+}
+/*
+  Wrong button
+*/
+.wrong {
+  background-color: rgb(255, 67, 67);
+}
+/*
+  Correct button
+*/
+.right {
+  background-color: rgb(1, 188, 1);
+}
+/*
+  Like button
+*/
+.poll .likebtn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.poll svg {
+  width: 32px;
+  height: 32px;
+}
+/*
+  Code
+*/
+code,pre{border-radius: 7px;font-family:Operator Mono,Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;color:#fff;width:100%;background-color:#2f2e3c;tab-size:4;max-width:100%}pre code{display:block;overflow-x:auto;padding:1em}code{padding:3px 5px}.hljs{color:#abb2bf;background:#282c34}.hljs-comment,.hljs-quote{color:#5c6370;font-style:italic}.hljs-doctag,.hljs-formula,.hljs-keyword{color:#c678dd}.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#e0aa6c;font-weight:600}.hljs-literal{color:#56b6c2}.hljs-addition,.hljs-attribute,.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#98c379}.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#d19a66}.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#61aeee}.hljs-built_in,.hljs-class .hljs-title,.hljs-title.class_{color:#e6c07b}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-link{text-decoration:underline}

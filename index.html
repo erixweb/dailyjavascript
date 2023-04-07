@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DailyJavaScript</title>
+    <script defer src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.addEventListener("load", () => {
+        const script = document.createElement("script")
+        script.src = "https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"
+        script.defer = true
+        document.body.append(script)
+        hljs.highlightAll()
+      })
+    </script>
+  </body>
+</html>
