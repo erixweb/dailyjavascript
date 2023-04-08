@@ -26,6 +26,26 @@ console.log(true + false)
         ],
         correct: "1"
     },
+    {
+        id: "3",
+        desc: "¿Cuál es el output de este código en JSX?",
+        code: `
+const items = [{id:"1", name:"stick"}, {id:"2", name:"rule"}]
+return (
+    <section>
+        {items.map(item => {
+            <h2>{item.name}</h2>
+        })}
+    </section>
+)
+        `,
+        possibleAnswers: [
+            "stick rule (in h2 tags)",
+            "Nothing (Empty section)",
+            "Error"
+        ],
+        correct: "Nothing (Empty section)"
+    }
 ]
 
 export default store
